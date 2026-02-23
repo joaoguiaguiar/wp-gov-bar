@@ -28,3 +28,5 @@ Isso garante compatibilidade com boas práticas modernas do WordPress.
 ## Contexto de Uso
 
 Criado para ambientes institucionais do setor público, onde a padronização visual e a separação entre lógica e apresentação são essenciais para manutenção e governança.
+
+![Preview da barra](./screenshot.jpeg)
