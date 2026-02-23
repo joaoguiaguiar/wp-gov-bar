@@ -1,32 +1,32 @@
 # Plugin WordPress - Barra do Governo Federal
 
-Plugin desenvolvido para integrar a Barra do Governo Federal brasileiro no topo de qualquer tema WordPress, sem acoplamento direto ao tema.
+Plugin para integração automática da Barra de Identidade Visual do Governo Federal no topo de qualquer tema WordPress, sem necessidade de alterar arquivos do tema.
 
 ## Objetivo
 
-Permitir a inclusão padronizada da barra institucional exigida em portais públicos, evitando:
+Garantir a inclusão padronizada da barra institucional exigida em portais públicos, evitando:
 
-- Alterações diretas no header.php
-- Quebras durante atualização de tema
-- Dificuldade de manutenção em múltiplos sites
+- Alterações diretas no `header.php`
+- Quebras após atualização de tema
+- Problemas de manutenção em múltiplos sites
 
-## Como funciona
+## Implementação
 
-O plugin injeta a barra utilizando o hook nativo:
+A barra é inserida através do hook nativo:
 
-- wp_body_open (WordPress 5.2+)
+- `wp_body_open` (WordPress 5.2+)
 
-Isso garante compatibilidade com boas práticas modernas do WordPress.
+O tema não precisa ser modificado.
 
 ## Características Técnicas
 
 - Injeção via hook nativo
-- Script carregado com defer
-- CSS aplicado dinamicamente para controle de sobreposição (z-index)
-- Filtros disponíveis para customização (URL do script e estilos)
+- Script carregado com `defer`
+- CSS aplicado dinamicamente para controle de sobreposição (`z-index`)
+- Estrutura desacoplada do tema
 
 ## Contexto de Uso
 
-Criado para ambientes institucionais do setor público, onde a padronização visual e a separação entre lógica e apresentação são essenciais para manutenção e governança.
+Desenvolvido para ambientes institucionais do setor público, onde padronização e manutenção centralizada são requisitos obrigatórios.
 
 ![Preview da barra](./screenshot.jpeg)
