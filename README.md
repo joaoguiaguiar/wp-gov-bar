@@ -27,6 +27,6 @@ O tema não precisa ser modificado.
 
 ## Contexto de Uso
 
-Desenvolvido para ambientes institucionais do setor público, onde padronização e manutenção centralizada são requisitos obrigatórios.
+Desenvolvido para ambientes institucionais do setor público.
 
 ![Preview da barra](./screenshot.jpeg)
