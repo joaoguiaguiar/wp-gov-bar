@@ -1,21 +1,30 @@
-# 🏛️ Plugin: Institutional Access Bar Integration
+# Plugin WordPress - Barra do Governo Federal
 
-## 🎯 Contexto Técnico
-Ao desenvolver soluções WordPress para o setor público, surgiu a necessidade de criar um sistema modular para integração de elementos de identidade visual obrigatórios. Inserir esse tipo de código diretamente no tema gerava problemas de manutenção e risco de quebra durante atualizações.
+Plugin desenvolvido para integrar a Barra do Governo Federal brasileiro no topo de qualquer tema WordPress, sem acoplamento direto ao tema.
 
-## 🛠️ Solução Arquitetural
-Desenvolvi este plugin para desacoplar a lógica de integração da camada visual do tema, seguindo princípios de modularidade e manutenibilidade.
+## Objetivo
 
-### Diferenciais Técnicos:
-- **Hook Strategy:** Utiliza `wp_body_open` (WordPress 5.2+) para injeção moderna de scripts
-- **Z-Index Management:** CSS injetado dinamicamente para controle de camadas
-- **Performance Optimization:** Carregamento assíncrono via `defer` sem bloquear renderização
-- **Filter Hooks:** Implementa filtros para customização (ex: URL do script, estilos CSS)
+Permitir a inclusão padronizada da barra institucional exigida em portais públicos, evitando:
 
-![Preview da barra](./screenshot.jpeg)
+- Alterações diretas no header.php
+- Quebras durante atualização de tema
+- Dificuldade de manutenção em múltiplos sites
 
-## ⚠️ Transparência e Portfólio
-- **Propósito:** Demonstração técnica de segurança e gestão de permissões em WordPress.
-- **Refatoração:** Código adaptado para uso seguro e genérico, removendo informações sensíveis.
-- **Propriedade:** Lógica e ativos originais pertencem à instituição.
-- **Restrições:** Proibida comercialização ou redistribuição do código por terceiros.
+## Como funciona
+
+O plugin injeta a barra utilizando o hook nativo:
+
+- wp_body_open (WordPress 5.2+)
+
+Isso garante compatibilidade com boas práticas modernas do WordPress.
+
+## Características Técnicas
+
+- Injeção via hook nativo
+- Script carregado com defer
+- CSS aplicado dinamicamente para controle de sobreposição (z-index)
+- Filtros disponíveis para customização (URL do script e estilos)
+
+## Contexto de Uso
+
+Criado para ambientes institucionais do setor público, onde a padronização visual e a separação entre lógica e apresentação são essenciais para manutenção e governança.
